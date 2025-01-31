@@ -88,4 +88,3 @@ if Custom_Trick_Selection == "yes":
 
 #Select and print a flatground skateboarding trick to try
 print(f"You should try to land this trick: {random.choice(Trick_List)}")
-  
