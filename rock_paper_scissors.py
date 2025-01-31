@@ -29,7 +29,7 @@ def decide_winner(user_choice, computer_choice):
 
 def play_RPS():
   print("Rock, Paper, or Scissors?")
-  user_choice = input("Enter Rock, Paper, or Scissors: ")
+  user_choice = input("Enter Rock, Paper, or Scissors:\n")
   user_choice = user_choice.upper().strip()
   if user_choice not in options:
         print("Invalid choice. Please select Rock, Paper, or Scissors.")
