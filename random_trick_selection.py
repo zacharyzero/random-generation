@@ -1,9 +1,13 @@
-print("Generate a flatground skateboarding trick to try")
+#This Python script generates a skateboarding trick to try
 
+#Print the script's purpose
+print("Generate a flatground skateboarding trick to try!\n")
+
+#Import random module from Python
 import random
 
 #Create a predefined list of skateboarding tricks to attempt
-Trick_List = [
+trick_list = [
   "ollie",
   "nollie",
   "fakie ollie",
@@ -38,12 +42,12 @@ Trick_List = [
   "switch varial kickflip",
   "varial heelflip",
   "fakie varial heelflip",
-  "nollie variah heelflip",
+  "nollie varial heelflip",
   "switch varial heelflip",
   "360 flip",
-  "fakie 360 flip"
-  "nollie 360 flip"
-  "switch 360 flip"
+  "fakie 360 flip",
+  "nollie 360 flip",
+  "switch 360 flip",
   "hardflip",
   "nollie hardflip",
   "switch hardflip",
@@ -76,15 +80,39 @@ Trick_List = [
   "fakie bigspin kickflip",
   "nollie bigspin kickflip",
   "switch bigspin kickflip",
+  "inward heelflip",
+  "fakie inward heelflip",
+  "nollie inward heelflip",
+  "switch inward heelflip",
+  "bigspin heelflip",
+  "fakie bigspin heelflip",
+  "switch bigspin heelflip",
+  "nollie bigspin heelflip",
+  "ollie north",
+  "body varial",
+  "pressure flip",
+  "casper flip",
+  "impossible",
+  "fakie impossible",
+  "nollie impossible",
+  "switch impossible"
+  "backside 360",
+  "fakie backside 360",
+  "nollie frontside 360",
+  "switch backside 360",
+  "frontside 360",
+  "switch frontside 360",
+  "nollie backside 360",
+  "fakie frontside 360"
 ]
 
 #Ask the user if they want to add any additional tricks to the list
-Custom_Trick_Selection = input("Do you want to add any tricks to the list? (yes/no): ")
+custom_trick_selection = input("Do you want to add any tricks to the list? (yes/no):\n").strip().lower()
 
 #User inputs what tricks they want to add
-if Custom_Trick_Selection == "yes":
-  New_Tricks = input("Enter the tricks you want to add, separated by commas: ").split(",")
-  Trick_List.extend([Trick.strip() for Trick in New_Tricks])
+if custom_trick_selection == "yes":
+  new_tricks = input("Enter the tricks you want to add, separated by commas:\n").split(",")
+  trick_list.extend([trick.strip() for trick in new_tricks if trick.strip()])
 
 #Select and print a flatground skateboarding trick to try
-print(f"You should try to land this trick: {random.choice(Trick_List)}")
+print(f"You should try to land this trick: {random.choice(trick_list)}")
