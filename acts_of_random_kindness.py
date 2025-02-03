@@ -1,5 +1,9 @@
-print("Generate a random act of kindness")
+#This Python script generates a random act of kindness
 
+#Print the script's purpose
+print("Generate a random act of kindness!\n")
+
+#Import random generation from Python's random module
 import random
 
 #Create a predefined list of acts of random kindness
